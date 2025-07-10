@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Workflowly</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header wrapper">
+        <div class="header__logo">
+            <a href="/" class="header__logo-link" title="Workflowly">
+                <svg class="header__logo-img" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#F96C3B"
+                    stroke="#F96C3B">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <g id="SVGRepo_iconCarrier">
+
+                        <defs>
+
+                            <style>
+                                .a {
+                                    fill: none;
+                                    stroke: ;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                }
+                            </style>
+
+                        </defs>
+
+                        <circle class="a" cx="10.6933" cy="11.1064" r="5.1937" />
+
+                        <path class="a" d="M15.2414,8.5071h24.37c3.0317,0,3.3855,5.7447.3335,5.7447H14.9719" />
+
+                        <circle class="a" cx="11.1265" cy="36.8936" r="5.1937" />
+
+                        <path class="a" d="M15.6746,34.2943h24.37c3.0317,0,3.3855,5.7448.3335,5.7448H15.4051" />
+
+                        <circle class="a" cx="20.3546" cy="24.3059" r="4.9853" />
+
+                        <path class="a" d="M24.6107,21.28H40.1721c3.0244,0,3.0369,6.0916-.0008,6.0916H24.6128" />
+
+                    </g>
+
+                </svg>
+            </a>
+        </div>
+
+        <nav class="header__nav nav" aria-label="Site">
+            <button type="button" class="nav__button nav__button--open" id="nav-button-open" aria-labelledby="nav-label"
+                aria-expanded="false">
+                <span id="nav-label" hidden>Navigation</span>
+                <svg class="nav__button-open-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    fill="currentColor">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                        <path d="M0 0h40v3H0z" />
+                    </g>
+                </svg>
+            </button>
+
+            <div class="nav__overlay" aria-hidden="true"></div>
+
+            <div class="nav__content" role="dialog" aria-labelledby="nav-label">
+                <button type="button" class="nav__button nav__button--close" id="nav-button-close"
+                    aria-labelledby="nav-label" aria-expanded="false" aria-label="Close">
+                    <svg class="nav__button-close-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                        viewBox="0 0 32 31">
+                        <g fill="currentColor" fill-rule="evenodd">
+                            <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                            <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <ul class="header__nav-links">
+                    <li>
+                        <a href="/" class="header__nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/" class="header__nav-link">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="/" class="header__nav-link">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="/" class="header__nav-link">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="/" class="header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header__buttons">
+            <button type="button" class="header__button header__button--login">
+                Login
+            </button>
+
+            <button type="button" class="header__button header__button--signup">
+                Get Started
+            </button>
+        </div>
+    </header>
+
+    <main class="main wrapper">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__headline">
+                    Supercharge Your Team's Productivity
+                </h1>
+
+                <div class="hero__vector">
+                    <svg class="hero__vector-img" viewBox="0 0 487 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 30C73.6307 10.3798 266.914 -17.0885 483 30" stroke="#F96C3B" stroke-width="8"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <p class="hero__subheadline">
+                    Workflowly is the all-in-one platform to streamline tasks, collaborate effortlessly, and stay in
+                    sync — wherever you work.
+                </p>
+
+                <div class="hero__cta-buttons">
+                    <button type="button" class="hero__cta-button hero__cta-button--try-free-trial">
+                        Start Free Trial
+                    </button>
+
+                    <button type="button" class="hero__cta-button hero__cta-button--view-demo">
+                        <img loading="lazy" src="/assets/images/play.png" alt="Play Button"
+                            class="hero__cta-button-play-image">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <div class="hero__visual-main-container">
+                    <img loading="lazy" src="/assets/images/person.png" alt="Person giving hand gesture"
+                        class="hero__visual-image hero__visual-main">
+
+                    <img loading="lazy" src="/assets/images/credit-card.png" alt="Credit card illustration"
+                        class="hero__visual-image hero__visual-credit-card">
+
+                    <img loading="lazy" src="/assets/images/amount.png" alt="A textbox with amount and send button"
+                        class="hero__visual-image hero__visual-amount">
+
+                    <img loading="lazy" src="/assets/images/total-income.png" alt="A statistic showing total income"
+                        class="hero__visual-image hero__visual-total-income">
+
+                    <img loading="lazy" src="/assets/images/tick.png" alt="A tick icon"
+                        class="hero__visual-image hero__visual-tick">
+
+                    <img loading="lazy" src="/assets/images/database.png" alt="An icon showing database"
+                        class="hero__visual-image hero__visual-database">
+
+                    <img loading="lazy" src="/assets/images/messages.png" alt="An icon showing messages"
+                        class="hero__visual-image hero__visual-messages">
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <h2 class="social-proof__headline">
+                Trusted by 25,000+ Teams Worldwide
+            </h2>
+
+            <div class="social-proof__companies">
+                <div class="social-proof__company">
+                    <div class="social-proof__company-logo">
+                        <img loading="lazy" src="/assets/images/unsplash.png" alt="Unsplash logo">
+                    </div>
+
+                    <div class="social-proof__company-name">
+                        <p>Unsplash</p>
+                    </div>
+                </div>
+
+                <div class="social-proof__company">
+                    <div class="social-proof__company-logo">
+                        <img loading="lazy" src="/assets/images/notion.png" alt="Notion logo">
+                    </div>
+
+                    <div class="social-proof__company-name">
+                        <p>Notion</p>
+                    </div>
+                </div>
+
+                <div class="social-proof__company">
+                    <div class="social-proof__company-logo">
+                        <img loading="lazy" src="/assets/images/intercom.png" alt="Intercom logo">
+                    </div>
+
+                    <div class="social-proof__company-name">
+                        <p>INTERCOM</p>
+                    </div>
+                </div>
+
+                <div class="social-proof__company">
+                    <div class="social-proof__company-logo">
+                        <img loading="lazy" src="/assets/images/descript.png" alt="Descript logo">
+                    </div>
+
+                    <div class="social-proof__company-name">
+                        <p>descript</p>
+                    </div>
+                </div>
+
+                <div class="social-proof__company">
+                    <div class="social-proof__company-logo">
+                        <img loading="lazy" src="/assets/images/grammarly.png" alt="Grammarly logo">
+                    </div>
+
+                    <div class="social-proof__company-name">
+                        <p>Grammarly</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+            <div class="support__content">
+                <h2 class="support__headline">
+                    Tools That Help You Grow
+                </h2>
+
+                <p class="support__subheadline">
+                    From project planning to performance analytics — Workflowly empowers global teams to do more with
+                    less.
+                </p>
+
+                <div class="support__ratings">
+                    <div class="support__rating">
+                        <div class="support__rating-stars">
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+                        </div>
+
+                        <p class="support__rating-stat">
+                            <span class="rating">4.9</span> / 5 rating
+                        </p>
+
+                        <p class="support__rating-rater">
+                            databricks
+                        </p>
+                    </div>
+
+                    <div class="support__rating">
+                        <div class="support__rating-stars">
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-colored.png" alt="Golden coloured star icon"
+                                class="support__rating-star">
+
+                            <img loading="lazy" src="/assets/images/star-empty.png" alt="Empty star icon"
+                                class="support__rating-star">
+                        </div>
+
+                        <p class="support__rating-stat">
+                            <span class="rating">4.8</span> / 5 rating
+                        </p>
+
+                        <p class="support__rating-rater">
+                            Chainalysis
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-features">
+                <div class="support-feature">
+                    <div class="support-feature__icon">
+                        <img loading="lazy" src="/assets/images/icon-analytics.png" alt="Analytics icon showing a line">
+                    </div>
+
+                    <div class="support-feature__content">
+                        <h3 class="support-feature__title">
+                            Content Scheduling
+                        </h3>
+
+                        <p class="support-feature__description">
+                            Easily plan, manage, and publish content to boost engagement and brand growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="support-feature">
+                    <div class="support-feature__icon">
+                        <img loading="lazy" src="/assets/images/icon-pie-chart.png" alt="Pie chart icon">
+                    </div>
+
+                    <div class="support-feature__content">
+                        <h3 class="support-feature__title">
+                            Insightful Analytics
+                        </h3>
+
+                        <p class="support-feature__description">
+                            Gain meaningful insights into your team's performance and share stunning reports.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="support-feature">
+                    <div class="support-feature__icon">
+                        <img loading="lazy" src="/assets/images/icon-mac-command.png" alt="A mac command icon">
+                    </div>
+
+                    <div class="support-feature__content">
+                        <h3 class="support-feature__title">
+                            Audience Engagement
+                        </h3>
+
+                        <p class="support-feature__description">
+                            Quickly respond and connect with your users to build lasting relationships.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__header">
+                <h2 class="features__headline">
+                    Explore Workflowly Features
+                </h2>
+
+                <p class="features__description">
+                    Discover tools designed to improve efficiency, simplify collaboration, and elevate team performance.
+                </p>
+
+                <button type="button" class="features__button features__button--get-started">
+                    Start Now
+                </button>
+            </div>
+
+            <div class="features__content">
+                <div class="features__feature">
+                    <div class="features__feature-image">
+                        <img loading="lazy" src="/assets/images/feature-image-1.png"
+                            alt="A document illustration showing charts">
+                    </div>
+
+                    <div class="features__feature-text">
+                        <h3 class="features__feature-title">
+                            Team Collaboration
+                        </h3>
+
+                        <p class="features__feature-description">
+                            Collaborate on tasks and projects seamlessly with real-time updates and messaging.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features__feature">
+                    <div class="features__feature-image">
+                        <img loading="lazy" src="/assets/images/feature-image-2.png"
+                            alt="A document illustration showing statistics">
+                    </div>
+
+                    <div class="features__feature-text">
+                        <h3 class="features__feature-title">
+                            Smart Cloud Storage
+                        </h3>
+
+                        <p class="features__feature-description">
+                            Keep your files organized and accessible with secure cloud storage — up to 2 TB.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features__feature">
+                    <div class="features__feature-image">
+                        <img loading="lazy" src="/assets/images/feature-image-3.png"
+                            alt="A document illustration showing statistics">
+                    </div>
+
+                    <div class="features__feature-text">
+                        <h3 class="features__feature-title">
+                            Daily Metrics
+                        </h3>
+
+                        <p class="features__feature-description">
+                            Get daily insights and analytics to track productivity and optimize workflows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits__content">
+                <h2 class="benefits__headline">
+                    Why Teams Love Workflowly
+                </h2>
+
+                <ul class="benefits__list">
+                    <li class="benefits__benefit">
+                        Expert onboarding support
+                    </li>
+
+                    <li class="benefits__benefit">
+                        Secure cloud access anywhere
+                    </li>
+
+                    <li class="benefits__benefit">
+                        Clear monthly performance reports
+                    </li>
+
+                    <li class="benefits__benefit">
+                        Integrated budgeting tools
+                    </li>
+
+                    <li class="benefits__benefit">
+                        Instant notifications & updates
+                    </li>
+                </ul>
+            </div>
+
+            <div class="benefits__visual">
+                <div class="benefits__visual-main-container">
+                    <img loading="lazy" src="/assets/images/laptop.png" alt="A black & white image of a laptop"
+                        class="benefits__visual-main">
+
+                    <img loading="lazy" src="/assets/images/user-tag.png"
+                        alt="A user tag having profile-pic, name, designation, message icon"
+                        class="benefits__visual-user">
+
+                    <img loading="lazy" src="/assets/images/total-income.png" alt="A statistic showing total income"
+                        class="benefits__visual-total-income">
+
+                    <img loading="lazy" src="/assets/images/icon-image.png" alt="An icon of an image"
+                        class="benefits__visual-icon-image">
+
+                    <img loading="lazy" src="/assets/images/money-transfer.png"
+                        alt="A tag showing money transaction was successful" class="benefits__visual-money">
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing__header">
+                <h2 class="pricing__headline">
+                    Flexible Pricing for Every Team
+                </h2>
+
+                <p class="pricing__subheadline">
+                    Simple plans that scale with your business.
+                </p>
+
+                <div class="pricing__options">
+                    <label class="pricing__option">
+                        <input type="radio" name="billing-frequency" id="bill-monthly">
+                        Monthly Billing
+                    </label>
+
+                    <label class="pricing__option">
+                        <input type="radio" name="billing-frequency" id="bill-yearly">
+                        Annual Billing
+                    </label>
+                </div>
+            </div>
+
+            <div class="pricing__plans">
+                <label class="pricing__plan-option">
+                    <input type="radio" name="billing-plan" id="starter">
+                    <div class="pricing__plan">
+                        <div class="pricing__plan-header">
+                            <h4 class="pricing__plan-headline">Starter</h4>
+
+                            <p class="pricing__plan-subheadline">
+                                Ideal for individuals and small teams
+                            </p>
+
+                            <p class="pricing__plan-price">
+                                <sup class="dollar-sign">$</sup>
+                                0
+                            </p>
+
+                            <p class="pricing__plan-save">o credit card required</p>
+                        </div>
+
+                        <div class="pricing__plan-card">
+                            <ul class="pricing__plan-list">
+                                <li class="pricing__plan-feature">
+                                    2 Users
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Basic File Sharing
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Commenting
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Live Chat Support
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Starter Integrations
+                                </li>
+                            </ul>
+
+                            <button type="button" class="pricing__plan-button">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="pricing__plan-option">
+                    <input type="radio" name="billing-plan" id="growth">
+                    <div class="pricing__plan">
+                        <div class="pricing__plan-header">
+                            <h4 class="pricing__plan-headline">Growth</h4>
+
+                            <p class="pricing__plan-subheadline">
+                                For growing teams ready to scale
+                            </p>
+
+                            <p class="pricing__plan-price">
+                                <sup class="dollar-sign">$</sup>
+                                9
+                            </p>
+
+                            <p class="pricing__plan-save">Save with yearly plan</p>
+                        </div>
+
+                        <div class="pricing__plan-card">
+                            <ul class="pricing__plan-list">
+                                <li class="pricing__plan-feature">
+                                    5 Users
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    All Core Apps
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Unlimited Exports
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Team Collaboration Tools
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Priority Support
+                                </li>
+                            </ul>
+
+                            <button type="button" class="pricing__plan-button">
+                                Upgrade to Growth
+                            </button>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="pricing__plan-option">
+                    <input type="radio" name="billing-plan" id="enterprise">
+                    <div class="pricing__plan">
+                        <div class="pricing__plan-header">
+                            <h4 class="pricing__plan-headline">Enterprise</h4>
+
+                            <p class="pricing__plan-subheadline">
+                                Complete solution for large organizations
+                            </p>
+
+                            <p class="pricing__plan-price">
+                                <sup class="dollar-sign">$</sup>
+                                19
+                            </p>
+
+                            <p class="pricing__plan-save">Custom onboarding included</p>
+                        </div>
+
+                        <div class="pricing__plan-card">
+                            <ul class="pricing__plan-list">
+                                <li class="pricing__plan-feature">
+                                    All features in Growth
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Dedicated Account Manager
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    SSO & Advanced Security
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Custom Integrations
+                                </li>
+
+                                <li class="pricing__plan-feature">
+                                    Enterprise-Grade SLAs
+                                </li>
+                            </ul>
+
+                            <button type="button" class="pricing__plan-button">
+                                Go Enterprise
+                            </button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <section class="testimonials-contact-form full-bleed" id="testimonials-contact-form-section">
+            <section class="testimonials">
+                <h2 class="testimonials__headline">
+                    What Our Customers Say
+                </h2>
+
+                <p class="testimonials__subheadline">
+                    Join thousands of teams already improving their workflow.
+                </p>
+
+                <div class="testimonials__quote-mark">
+                    <img loading="lazy" src="/assets/images/quote.png" alt="A quote icon">
+                </div>
+
+                <p class="testimonials__testimonial">
+                    “Workflowly helped our team reduce overhead and move faster. It’s intuitive and powerful — a
+                    must-have.”
+                </p>
+
+                <p class="testimonials__author">
+                    — Aria Zingaro, Product Manager
+                </p>
+
+                <div class="testimonials__author-icons">
+                    <div class="testimonials__author-icon">
+                        <img loading="lazy" src="/assets/images/testimonial-author-image-1.png"
+                            alt="Testimonial author profile pic">
+                    </div>
+
+                    <div class="testimonials__author-icon">
+                        <img loading="lazy" src="/assets/images/testimonial-author-image-2.png"
+                            alt="Testimonial author profile pic">
+                    </div>
+
+                    <div class="testimonials__author-icon">
+                        <img loading="lazy" src="/assets/images/testimonial-author-image-3.png"
+                            alt="Testimonial author profile pic">
+                    </div>
+
+                    <div class="testimonials__author-icon">
+                        <img loading="lazy" src="/assets/images/testimonial-author-image-4.png"
+                            alt="Testimonial author profile pic">
+                    </div>
+
+                    <div class="testimonials__author-icon">
+                        <img loading="lazy" src="/assets/images/testimonial-play-image-1.png"
+                            alt="Testimonial play button icon">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <div class="contact-form__image">
+                    <img loading="lazy" src="/assets/images/coins.png" alt="Stacked coins icon">
+                </div>
+
+                <h4 class="contact-form__headline">Book a Demo</h4>
+
+                <form class="contact-form__form">
+                    <label for="email" class="contact-form__label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"
+                        class="contact-form__input">
+
+                    <label for="message" class="contact-form__label">Message</label>
+                    <textarea name="message" id="message" placeholder="How can we help?"
+                        class="contact-form__input"></textarea>
+
+                    <button type="submit" class="contact-form__submit-btn">
+                        Request Demo
+                    </button>
+
+                    <span class="contact-form__free-trial-link">
+                        or <a class="free-trial" href="#">Start your free trial</a>
+                    </span>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer wrapper">
+        <div class="footer__main">
+            <div class="footer__cta">
+                <div class="footer__logo">
+                    <h4>Workflowly</h4>
+                </div>
+
+                <p class="footer__subheadline">
+                    Ready to streamline your operations? Try Workflowly today.
+                </p>
+
+                <form class="footer__email-input">
+                    <input type="email" name="email" id="footer-email" class="footer__email"
+                        placeholder="Enter your email">
+
+                    <button type="submit" class="footer__email-submit-btn">
+                        <img loading="lazy" src="/assets/images/arrow-right.png" alt="arrow right icon">
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer__links-container">
+                <div class="footer__links">
+                    <h5 class="footer__link-headline">Support</h5>
+
+                    <ul class="footer__links-list">
+                        <li class="footer__link">Help Center</li>
+                        <li class="footer__link">Account Settings</li>
+                        <li class="footer__link">Getting Started</li>
+                        <li class="footer__link">Contact Support</li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h5 class="footer__link-headline">Resources</h5>
+
+                    <ul class="footer__links-list">
+                        <li class="footer__link">Blog</li>
+                        <li class="footer__link">Documentation</li>
+                        <li class="footer__link">API Status</li>
+                        <li class="footer__link">Community</li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h5 class="footer__link-headline">Company</h5>
+
+                    <ul class="footer__links-list">
+                        <li class="footer__link">Pricing</li>
+                        <li class="footer__link">Security</li>
+                        <li class="footer__link">Careers</li>
+                        <li class="footer__link">About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__legal-info">
+            <div class="copyright-notice">
+                <p>&copy; 2025 Workflowly Inc. All Rights Reserved.</p>
+            </div>
+
+            <div class="terms-and-conditions-privacy">
+                <p>
+                    <a href="/">Terms and Conditions</a>
+                    &bull;
+                    <a href="/">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
