@@ -2,7 +2,7 @@ const body = document.querySelector("body");
 const main = document.querySelector("main");
 const btnOpen = document.getElementById("nav-button-open");
 const btnClose = document.getElementById("nav-button-close");
-const navContent = document.querySelector(".nav__content");
+const navContent = document.querySelector(".nav__drawer");
 const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia('( width < 64rem )');
 const media4K = window.matchMedia('( width > 90rem )');
@@ -70,3 +70,16 @@ btnOpen.addEventListener("click", openMobileMenu);
 btnClose.addEventListener("click", closeMobileMenu);
 
 document.addEventListener("click", handleOutsideMenuClick);
+
+document.querySelectorAll('a[href="/"]').forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+    });
+});
+
+document.querySelectorAll("form").forEach(form => {
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        console.log("Form submission prevented.");
+    });
+});
