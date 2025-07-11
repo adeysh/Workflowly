@@ -498,6 +498,7 @@ width xl: 1440px
 /* || Globals */
 
 body {
+    position: relative;
     min-block-size: 100vh;
     font-family: var(--ff-primary);
     font-size: var(--fs-sm);
@@ -1851,6 +1852,60 @@ ul {
 /* full bleed styles for screens smaller than 480px */
 .full-bleed {
     width: 100vw;
+}
+
+.background-blur-ellipse {
+    position: absolute;
+    width: clamp(15.625rem, 8.839285714285714rem + 33.92857142857143vw, 39.375rem);
+    height: clamp(15.625rem, 8.839285714285714rem + 33.92857142857143vw, 39.375rem);
+    background-color: #FFD6D6;
+    filter: blur(1000px);
+    border-radius: 50%;
+    pointer-events: none;
+    display: none;
+
+    @media screen and (width >=75rem) {
+        display: block;
+    }
+}
+
+.background-blur-ellipse-header-1 {
+    top: -450px;
+    left: -450px;
+}
+
+.background-blur-ellipse-header-2 {
+    top: -534px;
+    left: 492px;
+}
+
+.background-blur-ellipse-header-3 {
+    background-color: transparent;
+    top: 162px;
+    left: 120px;
+}
+
+.background-blur-ellipse-header-4 {
+    background-color: transparent;
+    top: 162px;
+    left: 660px;
+}
+
+.background-blur-ellipse-header-5 {
+    background-color: #F96C3B;
+    top: 140px;
+    left: 1300px;
+}
+
+.background-blur-ellipse-features-1 {
+    top: 1840px;
+    left: -500px;
+}
+
+.background-blur-ellipse-pricing-1 {
+    background-color: #F96C3B;
+    top: 3000px;
+    right: -300px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------- */
